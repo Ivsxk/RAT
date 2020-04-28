@@ -11,7 +11,7 @@ import argparse
 import time
 from datetime import datetime
 
-os.environ["CUDA_VISIBLE_DEVICES"] = "2"
+os.environ["CUDA_VISIBLE_DEVICES"] = "6"
 
 DATABASE_DIR = './database/Data.db'
 

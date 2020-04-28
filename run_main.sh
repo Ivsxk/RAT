@@ -23,7 +23,7 @@ fi
 
 
 
-for MODEL_INDEX in 1;
+for MODEL_INDEX in 1 2 3;
 do
 for X_WINDOW_SIZE in 31;
 do
@@ -55,12 +55,12 @@ if [ ! -d "$SAVE_MODEL_DIR" ]; then
 fi
 
 python main.py \
---total_step 1000 \
+--total_step 10000 \
 --x_window_size ${X_WINDOW_SIZE} \
 --batch_size ${BATCH_SIZE} \
 --coin_num 505 \
 --feature_number 4 \
---output_step 100 \
+--output_step 1000 \
 --test_portion 0.1 \
 --trading_consumption 0.0025 \
 --variance_penalty 0.0 \
@@ -73,7 +73,7 @@ python main.py \
 --model_index ${MODEL_INDEX} \
 --model_dim ${MODEL_DIM} \
 --multihead_num ${MULTIHEAD_NUM} \
---filter_d ${LOCAL_CONTEXT_LENGTH} \
+--local_context_length ${LOCAL_CONTEXT_LENGTH} \
 --weight_decay ${WEIGHT_DECAY} \
 --daily_interest_rate ${DAILY_INTEREST_RATE} \
 --log_dir ${INFOR_DIR} #> ${INFOR_DIR}/${MODEL_INDEX}_info.txt 2>&1 
