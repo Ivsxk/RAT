@@ -10,7 +10,7 @@ pytorch 0.4.1.post2
 cudnn 7.4.1
 
 # Dataset preparation
-Download database from https://drive.google.com/drive/folders/1qY-ZWtUxuA_mw9kei-6j5VSwWrck8xbn?usp=sharing to directory ${RAT_ROOT}/RAT
+Download database from https://drive.google.com/drive/folders/1qY-ZWtUxuA_mw9kei-6j5VSwWrck8xbn?usp=sharing to ${RAT_ROOT}/RAT
 
 # Build
 ## Running
