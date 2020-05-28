@@ -38,7 +38,7 @@ cd ${RAT_ROOT}/RAT-master
 ## Configurations
 
 
-![image](https://github.com/Ivsxk/RAT/blob/master/RAT_structure.pdf)
+![image](https://github.com/Ivsxk/RAT/blob/master/RAT_structure.PNG)
 
 
 
