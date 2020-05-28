@@ -33,7 +33,7 @@ cd ${RAT_ROOT}/RAT
 ./run_main.sh
 
 
-##Configurations :
+## Configurations
 
 
 --x_window_size
