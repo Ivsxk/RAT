@@ -63,7 +63,7 @@ cd ${RAT_ROOT}/RAT-master
     Set a unique ID for the model.
 
 # Logging
-After training process, the model is saved in ${SAVE_MODEL_DIR}/${MODEL_INDEX}.pkl
+After training process, the model is saved in ${SAVE_MODEL_DIR}/${MODEL_INDEX}.pkl.
 After testing process, the backtest results are saved in ${LOG_DIR}/train_summary.csv. It contains metrics such as fAPV, SR, CR and basktest_history.
 
 
