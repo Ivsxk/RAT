@@ -39,9 +39,7 @@ cd ${RAT_ROOT}/RAT-master
 
 <img width="500" height="500" src="https://github.com/Ivsxk/RAT/blob/master/RAT_structure.PNG"/>
 
-
-
-
+The figure above shows the entire structure of RAT, and we detail some related parameter configurations in run_main.sh as below.
 
 --x_window_size
 
