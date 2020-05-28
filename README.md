@@ -10,7 +10,7 @@ pytorch 0.4.1.post2
 cudnn 7.4.1
 
 # Dataset preparation
-We provide the SP&500 dataset in link https://drive.google.com/drive/folders/1qY-ZWtUxuA_mw9kei-6j5VSwWrck8xbn?usp=sharing. Please download ./database to ${RAT_ROOT}/RAT/.
+We provide the SP&500 dataset in link https://drive.google.com/drive/folders/1qY-ZWtUxuA_mw9kei-6j5VSwWrck8xbn?usp=sharing. Please download ./database to the same directory as the main.py.
 
 # Build
 ## Running
