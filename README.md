@@ -50,7 +50,5 @@ cd ${RAT_ROOT}/RAT
 # Logging
 In the "train_summary.csv", it saves the net_id, fAPV, SR, CR, TO, St_v and backtest_history.
 
-# Acknowledgement
-This project would not have been finished without using the codes from the following open source projects:
-* A Deep Reinforcement Learning Framework for the Financial Portfolio Management Problem (https://github.com/ZhengyaoJiang/PGPortfolio)
+
 
