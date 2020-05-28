@@ -1031,7 +1031,6 @@ class Batch_Loss(nn.Module):
         if self.size_average:
             loss = batch_loss.mean() #+ self.gamma*variance_penalty + self.beta*cost_penalty.mean() 
             return loss, portfolio_value[0][0]
-#画图以及输出用的loss
         else:
             loss = batch_loss.mean() #+self.gamma*variance_penalty + self.beta*cost_penalty.mean() #(dim=0)                           
             return loss, portfolio_value[0][0]
@@ -1154,9 +1153,9 @@ class SimpleLossCompute_tst:
 
 def make_std_mask(local_price_context,batch_size):
     "Create a mask to hide padding and future words."
-    local_price_mask = (torch.ones(batch_size,1,1)==1)             #[30,9]不为0的为真,然后增加一维度[30,1,9]  时序维度，或者说是word中非padding的部分
-    local_price_mask = local_price_mask & (subsequent_mask(local_price_context.size(-2)).type_as(local_price_mask.data))   #[64,1,1]&[1,1,1]下三角为真 ——> [64,1,1]
-    return local_price_mask    #[64, 64, 64]  [64,1,1] 全1
+    local_price_mask = (torch.ones(batch_size,1,1)==1)            
+    local_price_mask = local_price_mask & (subsequent_mask(local_price_context.size(-2)).type_as(local_price_mask.data))   
+    return local_price_mask    
 
 
 
@@ -1189,7 +1188,7 @@ def train_one_step(DM,x_window_size,model,loss_compute,local_context_length):
     new_w=new_w.detach().cpu().numpy()
     batch_w(new_w)  
     
-    loss, portfolio_value = loss_compute(out,trg_y)             #如果包含优化器opt，会更新
+    loss, portfolio_value = loss_compute(out,trg_y)           
     return loss, portfolio_value
 
 
@@ -1203,13 +1202,13 @@ def test_online(DM,x_window_size,model,evaluate_loss_compute,local_context_lengt
 
     tst_previous_w=torch.tensor(tst_batch_last_w,dtype=torch.float).cuda()
     tst_previous_w=torch.unsqueeze(tst_previous_w,1)  #(109, 11)-> [109,1,11]
-#                print("tst_previous_w:",tst_previous_w.size())            #[2426, 1, 11] 对
+#                print("tst_previous_w:",tst_previous_w.size())            #[2426, 1, 11] 
     tst_batch_input=tst_batch_input.transpose((1,0,2,3))
     tst_batch_input=tst_batch_input.transpose((0,1,3,2))
 #        print("batch_input:",batch_input.size())
     long_term_tst_src=torch.tensor(tst_batch_input,dtype=torch.float).cuda()      #(3,1,2907,11)     
 #########################################################################################
-    tst_src_mask = (torch.ones(long_term_tst_src.size()[1],1,x_window_size)==1)   #[109, 1, 31] 对
+    tst_src_mask = (torch.ones(long_term_tst_src.size()[1],1,x_window_size)==1)   #[109, 1, 31] 
 #        print("src_mask:",src_mask.size())   
 
     long_term_tst_currt_price=long_term_tst_src.permute((3,1,2,0))  #(3,109,31,11)->(11,109,31+9,3)
@@ -1259,9 +1258,9 @@ def test_net(DM, total_step, output_step, x_window_size, local_context_length, m
 
     for i in range(total_step):        
         if(is_trn):
-            loss, portfolio_value = train_one_step(DM, x_window_size, model, loss_compute, local_context_length)#如果包含优化器opt，会更新
+            loss, portfolio_value = train_one_step(DM, x_window_size, model, loss_compute, local_context_length)
             total_loss += loss.item()
-        if (i % output_step == 0 and is_trn):   #每50个step输出一次
+        if (i % output_step == 0 and is_trn):  
             elapsed = time.time() - start
             print("Epoch Step: %d| Loss per batch: %f| Portfolio_Value: %f | batch per Sec: %f \r\n" %
                     (i,loss.item(), portfolio_value.item() , output_step / elapsed))
@@ -1387,7 +1386,7 @@ DM=DataMatrices(start=start,end=end,
 def make_model(batch_size, coin_num, window_size, feature_number,N=6, 
                d_model_Encoder=512,d_model_Decoder=16, d_ff_Encoder=2048, d_ff_Decoder=64, h=8, dropout=0.1,local_context_length=3):
     "Helper: Construct a model from hyperparameters."
-    c = copy.deepcopy   #深拷贝，拷贝对象及其子对象
+    c = copy.deepcopy   
     attn_Encoder = MultiHeadedAttention(True, h, d_model_Encoder,0.1,local_context_length)
     attn_Decoder = MultiHeadedAttention(True, h, d_model_Decoder,0.1,local_context_length)
     attn_En_Decoder = MultiHeadedAttention(False, h, d_model_Decoder,0.1,1)
@@ -1399,13 +1398,13 @@ def make_model(batch_size, coin_num, window_size, feature_number,N=6,
     model = EncoderDecoder(batch_size, coin_num, window_size, feature_number,d_model_Encoder,d_model_Decoder,
         Encoder(EncoderLayer(d_model_Encoder, c(attn_Encoder), c(ff_Encoder), dropout), N),
         Decoder(DecoderLayer(d_model_Decoder, c(attn_Decoder), c(attn_En_Decoder), c(ff_Decoder), dropout), N),
-        c(position_Encoder),                  #src position ecoding
+        c(position_Encoder),                  #price series position ecoding
         c(position_Decoder),                  #local_price_context position ecoding
         local_context_length              )    
     for p in model.parameters():
         if p.dim() > 1:
             nn.init.xavier_uniform(p)
-    return model             #返回一个EncoderDecoder类的实例
+    return model             
 
 
 
