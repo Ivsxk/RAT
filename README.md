@@ -37,8 +37,8 @@ cd ${RAT_ROOT}/RAT-master
 
 ## Configurations
 
-<img width="150" height="150" src="https://github.com/Ivsxk/RAT/blob/master/RAT_structure.PNG"/>
-![image](https://github.com/Ivsxk/RAT/blob/master/RAT_structure.PNG)
+<img width="300" height="300" src="https://github.com/Ivsxk/RAT/blob/master/RAT_structure.PNG"/>
+
 
 
 
