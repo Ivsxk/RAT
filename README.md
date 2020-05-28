@@ -5,7 +5,7 @@
 - [Dataset](#dataset)
 - [Build](#build)
 	- [Running](#running)
-	- [Configurations](#some important configurations related to RAT)
+	- [Configurations](#configurations)
 - [Logging](#logging)
 
 
@@ -33,7 +33,7 @@ cd ${RAT_ROOT}/RAT
 ./run_main.sh
 
 
-## Some important configurations related to RAT:
+##Configurations :
 
 
 --x_window_size
