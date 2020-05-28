@@ -1,3 +1,16 @@
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Dependencies](#dependencies)
+- [Dataset preparation](#dataset preparation)
+- [Build](#build)
+	- [Running](#running)
+	- [Configurations](#some important configurations related to RAT)
+- [Logging](#logging)
+
+
+
+
 # Introduction
 
 This repo is the Pytorch code for our paper in Ijcai 2020 (Relation-Aware Transformer for Portfolio Policy Learning).
