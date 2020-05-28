@@ -2,7 +2,7 @@
 
 - [Introduction](#introduction)
 - [Dependencies](#dependencies)
-- [Dataset preparation](#dataset preparation)
+- [Dataset](#dataset preparation)
 - [Build](#build)
 	- [Running](#running)
 	- [Configurations](#some important configurations related to RAT)
