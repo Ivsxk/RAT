@@ -26,9 +26,11 @@ cudnn 7.4.1
 We provide the SP&500 dataset in link https://drive.google.com/drive/folders/1qY-ZWtUxuA_mw9kei-6j5VSwWrck8xbn?usp=sharing. Please download ./database to the same directory as the main.py.
 
 # Build
+File main.py mainly contains the construction of RAT network, data preprocessing, the training process on the training dataset and testing on the test dataset. File run_mian.sh mainly contains the parameter configurations of training RAT.
+ 
 ## Running
 
-cd ${RAT_ROOT}/RAT
+cd ${RAT_ROOT}/RAT-master
 
 ./run_main.sh
 
