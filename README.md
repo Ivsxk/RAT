@@ -38,6 +38,11 @@ cd ${RAT_ROOT}/RAT-master
 ## Configurations
 
 
+![image](https://github.com/Ivsxk/RAT/blob/master/RAT_structure.pdf)
+
+
+
+
 --x_window_size
 
     The length of the price series.
