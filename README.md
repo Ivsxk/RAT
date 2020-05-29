@@ -24,7 +24,7 @@ pytorch 0.4.1.post2
 cudnn 7.4.1
 
 # Dataset
-Crypto-A is originally accessed with Poloniex[<sup>[1]</sup>](#refer-anchor-1), where data selection is based on the method  in [<sup>[2]</sup>](#refer-anchor-2). We provide the Crypto-A dataset in link https://drive.google.com/drive/folders/1Icmc5OtTmrLp03JTIdZP849u7ZJ6ytuF. Please download ./database to the same directory as the main.py. The statistics of Crypto-A are summarized as below. 
+The raw data of Crypto-A is accessed with Poloniex[<sup>[1]</sup>](#refer-anchor-1).  We provide the Crypto-A dataset in link https://drive.google.com/drive/folders/1Icmc5OtTmrLp03JTIdZP849u7ZJ6ytuF, where data selection is based on the method  in [<sup>[2]</sup>](#refer-anchor-2). Please download ./database to the same directory as the main.py. The statistics of Crypto-A are summarized as below. 
 | Dataset|Assets| Training | Test|
 | ---------- | :-----------:  | :-----------: |:-----------: |
 |Crypto-A|12|2016.01-2017.11|2017.11-2018.01|
