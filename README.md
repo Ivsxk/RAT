@@ -26,7 +26,7 @@ cudnn 7.4.1
 # Dataset
 We provide the Crypto-A dataset in link https://drive.google.com/drive/folders/1Icmc5OtTmrLp03JTIdZP849u7ZJ6ytuF. Please download ./database to the same directory as the main.py.
 
-Crypto-A is originally accessed with Poloniex, where data selection is based on the method  in [<sup>1</sup>](#refer-anchor-1)
+Crypto-A is originally accessed with Poloniex, where data selection is based on the method  in [<sup>[1]</sup>](#refer-anchor-1)
 The statistics of Crypto-A are summarized as below. 
 | Dataset|Assets| Training | Test|
 | ---------- | :-----------:  | :-----------: |:-----------: |
