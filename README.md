@@ -80,4 +80,4 @@ After testing process, the backtest results are saved in ${LOG_DIR}/train_summar
 # References
 <div id="refer-anchor-1"></div>
 
-- [1] [[Jianget al., 2017] Zhengyao Jiang, Dixing Xu, and Jinjun Liang.A deep reinforcement learning framework for the financial port-folio management problem.arXiv, 2017.](http://xueshu.baidu.com/)
+- [1] [[Jianget al., 2017] Zhengyao Jiang, Dixing Xu, and Jinjun Liang. A deep reinforcement learning framework for the financial port-folio management problem. arXiv, 2017.](https://arxiv.org/abs/1706.10059)
