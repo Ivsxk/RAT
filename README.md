@@ -13,7 +13,7 @@
 
 # Introduction
 
-This repo is the Pytorch code for our paper in Ijcai 2020 (Relation-Aware Transformer for Portfolio Policy Learning).
+This repo is the Pytorch code for our paper “Relation-Aware Transformer for Portfolio Policy Learning” in Ijcai 2020.
 
 # Dependencies
 python 3.7.3 (Anaconda)
@@ -24,6 +24,10 @@ cudnn 7.4.1
 
 # Dataset
 We provide the Crypto-A dataset in link https://drive.google.com/drive/folders/1Icmc5OtTmrLp03JTIdZP849u7ZJ6ytuF. Please download ./database to the same directory as the main.py.
+
+| ---------- |Assets| Training | Test|
+|Crypto-A|12|2016.01-2017.11|2017.11-2018.01|
+| ---------- | :-----------:  | :-----------: |:-----------: |
 
 # Build
 File main.py mainly contains the construction of RAT network, data preprocessing, the fitting model process and testing process. File run_mian.sh mainly contains the parameter configurations of training RAT.
