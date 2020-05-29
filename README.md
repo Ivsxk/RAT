@@ -77,7 +77,7 @@ After testing process, the backtest results are saved in ${LOG_DIR}/train_summar
 # References
 <div id="refer-anchor-1"></div>
 
-- [1] [Poloniex’s official API.] (https://poloniex.com/support/api/)
+- [1] [Poloniex’s official API.](https://poloniex.com/support/api/)
 
 <div id="refer-anchor-2"></div>
 
