@@ -25,7 +25,8 @@ cudnn 7.4.1
 # Dataset
 We provide the Crypto-A dataset in link https://drive.google.com/drive/folders/1Icmc5OtTmrLp03JTIdZP849u7ZJ6ytuF. Please download ./database to the same directory as the main.py.
 
-| ---------- |Assets| Training | Test|
+| Dataset|Assets| Training | Test|
+| ---------- | :-----------:  | :-----------: |:-----------: |
 |Crypto-A|12|2016.01-2017.11|2017.11-2018.01|
 | ---------- | :-----------:  | :-----------: |:-----------: |
 
