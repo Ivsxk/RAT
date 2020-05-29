@@ -81,7 +81,7 @@ After testing process, the backtest results are saved in ${LOG_DIR}/train_summar
 
 <div id="refer-anchor-2"></div>
 
-- [2] [Crypto-A dataset](https://drive.google.com/drive/folders/1Icmc5OtTmrLp03JTIdZP849u7ZJ6ytuF)
+- [2] [Crypto-A dataset.](https://drive.google.com/drive/folders/1Icmc5OtTmrLp03JTIdZP849u7ZJ6ytuF)
 
 <div id="refer-anchor-3"></div>
 
