@@ -24,14 +24,12 @@ pytorch 0.4.1.post2
 cudnn 7.4.1
 
 # Dataset
-We provide the Crypto-A dataset in link https://drive.google.com/drive/folders/1Icmc5OtTmrLp03JTIdZP849u7ZJ6ytuF. Please download ./database to the same directory as the main.py.
-
-Crypto-A is originally accessed with Poloniex
-//, where data selection is based on the method  in [Jiang et al., 2017][<sup>[1]</sup>](#refer-anchor-1)
+Crypto-A is originally accessed with Poloniex[<sup>[1]</sup>](#refer-anchor-1), where data selection is based on the method  in [<sup>[2]</sup>](#refer-anchor-2).
 The statistics of Crypto-A are summarized as below. 
 | Dataset|Assets| Training | Test|
 | ---------- | :-----------:  | :-----------: |:-----------: |
 |Crypto-A|12|2016.01-2017.11|2017.11-2018.01|
+We provide the Crypto-A dataset in link https://drive.google.com/drive/folders/1Icmc5OtTmrLp03JTIdZP849u7ZJ6ytuF. Please download ./database to the same directory as the main.py.
 
 
 # Build
@@ -80,4 +78,8 @@ After testing process, the backtest results are saved in ${LOG_DIR}/train_summar
 # References
 <div id="refer-anchor-1"></div>
 
-- [1] [[Jianget al., 2017] Zhengyao Jiang, Dixing Xu, and Jinjun Liang. A deep reinforcement learning framework for the financial port-folio management problem. arXiv, 2017.](https://arxiv.org/abs/1706.10059)
+- [1] Poloniex’s official API: (https://poloniex.com/support/api/)
+
+<div id="refer-anchor-2"></div>
+
+- [2] Zhengyao Jiang, Dixing Xu, and Jinjun Liang. A deep reinforcement learning framework for the financial port-folio management problem. arXiv, 2017.](https://arxiv.org/abs/1706.10059)
