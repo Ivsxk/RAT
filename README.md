@@ -77,6 +77,7 @@ After testing process, the backtest results are saved in ${LOG_DIR}/train_summar
 
 # Citation
 If you use this code for your research, please consider citing:
+
 @inproceedings{xu2020relation,
   title={Relation-Aware Transformer for Portfolio Policy Learning},
   author={Xu, Ke and Zhang, Yifan and Ye, Deheng and Zhao, Peilin  and Tan, Mingkui},
