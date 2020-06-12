@@ -14,7 +14,7 @@
 
 # Introduction
 
-This repo is the Pytorch code for our paper “Relation-Aware Transformer for Portfolio Policy Learning” in Ijcai 2020.
+This repo is the Pytorch code for our paper “Relation-Aware Transformer for Portfolio Policy Learning” in IJCAI 2020.
 
 # Dependencies
 python 3.7.3 (Anaconda)
