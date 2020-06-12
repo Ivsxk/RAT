@@ -7,6 +7,7 @@
 	- [Running](#running)
 	- [Configurations](#configurations)
 - [Logging](#logging)
+- [Citation](#citation)
 - [References](#references)
 
 
@@ -73,6 +74,15 @@ The figure shows the entire structure of RAT, and we detail some related paramet
 # Logging
 After training process, the model is saved in ${SAVE_MODEL_DIR}/${MODEL_INDEX}.pkl.
 After testing process, the backtest results are saved in ${LOG_DIR}/train_summary.csv. It contains metrics such as fAPV, SR, CR and basktest_history.
+
+# Citation
+If you use this code for your research, please consider citing:
+@inproceedings{xu2020relation,
+  title={Relation-Aware Transformer for Portfolio Policy Learning},
+  author={Xu, Ke and Zhang, Yifan and Ye, Deheng and Zhao, Peilin  and Tan, Mingkui},
+  booktitle={International Joint Conference on Artificial Intelligence}, 
+  year={2020}
+}
 
 # References
 <div id="refer-anchor-1"></div>
