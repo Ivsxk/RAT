@@ -1,6 +1,7 @@
 ## Table of Contents
 
 - [Introduction](#introduction)
+	- [Differences](#differences)
 - [Dependencies](#dependencies)
 - [Dataset](#dataset)
 - [Build](#build)
