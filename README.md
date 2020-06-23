@@ -1,7 +1,7 @@
 ## Table of Contents
 
 - [Introduction](#introduction)
-	- [Differences](#differences)
+	- [Differences](#differences from the article version)
 - [Dependencies](#dependencies)
 - [Dataset](#dataset)
 - [Build](#build)
