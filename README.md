@@ -21,7 +21,7 @@ This repo is the Pytorch code for our paper “Relation-Aware Transformer for Po
 ## Differences from the article version  
 Note that this library is a part of our main project, and it is several versions ahead of the article.
 
-*In decision-making layer, we construct the leverage operation through two softmax heads, and it's performance is similar to the result of using three softmax heads.
+* In decision-making layer, we construct the leverage operation through two softmax heads, and it's performance is similar to the result of using three softmax heads.
 
 # Dependencies
 python 3.7.3 (Anaconda)
