@@ -8,6 +8,7 @@
 	- [Running](#running)
 	- [Configurations](#configurations)
 - [Logging](#logging)
+- [Model](#model)
 - [Citation](#citation)
 - [References](#references)
 
@@ -80,6 +81,11 @@ The figure shows the entire structure of RAT, and we detail some related paramet
 # Logging
 After training process, the model is saved in ${SAVE_MODEL_DIR}/${MODEL_INDEX}.pkl.
 After testing process, the backtest results are saved in ${LOG_DIR}/train_summary.csv. It contains metrics such as fAPV, SR, CR and basktest_history.
+
+# Model
+We provide a model with 495.28 fAPV in https://drive.google.com/drive/folders/11MK2QSj30G9pYE8qx_-80zgCDmJOHS9U?usp=sharing. 
+You can download the model to ${SAVE_MODEL_DIR}/ and test it. 
+When testing the given model, you need to comment out line 1443 in main.py to avoid the training process.
 
 # Citation
 If you use this code for your research, please consider citing:
