@@ -42,7 +42,7 @@ parser.add_argument('--feature_number', type=int, default=4)
 parser.add_argument('--output_step', type=int, default=500)
 parser.add_argument('--model_index', type=int, default=0)
 parser.add_argument('--multihead_num', type=int, default=2)
-parser.add_argument('--local_context_length', type=int, default=3)
+parser.add_argument('--local_context_length', type=int, default=5)
 parser.add_argument('--model_dim', type=int, default=12)
 
 
@@ -51,7 +51,7 @@ parser.add_argument('--trading_consumption', type=float, default=0.0025)
 parser.add_argument('--variance_penalty', type=float, default=0.0)
 parser.add_argument('--cost_penalty', type=float, default=0.0)
 parser.add_argument('--learning_rate', type=float, default=0.0001)
-parser.add_argument('--weight_decay', type=float, default=0.0001)
+parser.add_argument('--weight_decay', type=float, default=5e-8)
 parser.add_argument('--daily_interest_rate', type=float, default=0.001)
 
 parser.add_argument('--start', type=str, default = "2016/01/01")
@@ -746,11 +746,11 @@ class DecoderLayer(nn.Module):
 
 
 
-def subsequent_mask(size):   #size local_price_context 时序维度 1
+def subsequent_mask(size):   
     "Mask out subsequent positions."
     attn_shape = (1, size, size)
-    subsequent_mask = np.triu(np.ones(attn_shape), k=1).astype('uint8')         #上三角为1
-    return torch.from_numpy(subsequent_mask) == 0   #翻轉為下三角
+    subsequent_mask = np.triu(np.ones(attn_shape), k=1).astype('uint8')         
+    return torch.from_numpy(subsequent_mask) == 0   
 
 
 
@@ -1328,7 +1328,7 @@ def train_net(DM, total_step, output_step, x_window_size, local_context_length, 
             model.train()
             loss, portfolio_value=train_one_step(DM,x_window_size,model,loss_compute,local_context_length)
             total_loss += loss.item()
-        if (i % output_step == 0 and is_trn):   #每50个step输出一次
+        if (i % output_step == 0 and is_trn):  
             elapsed = time.time() - start
             print("Epoch Step: %d| Loss per batch: %f| Portfolio_Value: %f | batch per Sec: %f \r\n" %
                     (i,loss.item(), portfolio_value.item() , output_step / elapsed))
@@ -1431,7 +1431,7 @@ model = make_model(batch_size, coin_num, x_window_size, feature_number,
 
 #model = make_model3(N=6, d_model=512, d_ff=2048, h=8, dropout=0.1)
 model = model.cuda()
-#model_size, factor, warmup, optimizer)  用learn_rate表示warmup
+#model_size, factor, warmup, optimizer)  
 model_opt = NoamOpt(lr_model_sz, factor, warmup, torch.optim.Adam(model.parameters(), lr=0, betas=(0.9, 0.98), eps=1e-9,weight_decay=weight_decay))
 
 loss_compute = SimpleLossCompute( Batch_Loss(trading_consumption,interest_rate,variance_penalty,cost_penalty,True), model_opt)
