@@ -85,7 +85,7 @@ After testing process, the backtest results are saved in ${LOG_DIR}/train_summar
 # Model
 We provide a model with 495.28 fAPV in https://drive.google.com/drive/folders/11MK2QSj30G9pYE8qx_-80zgCDmJOHS9U?usp=sharing. 
 You can download the model to ${SAVE_MODEL_DIR}/ and test it. 
-When testing the given model, you need to comment out line 1443 in main.py to avoid the training process.
+When testing the given model, please comment out line 1443 in main.py to avoid the training process.
 
 # Citation
 If you use this code for your research, please consider citing:
