@@ -32,7 +32,7 @@ pytorch 0.4.1.post2
 cudnn 7.4.1
 
 # Dataset
-The raw data of Crypto-A is accessed with Poloniex[<sup>[1]</sup>](#refer-anchor-1).  We provide the Crypto-A dataset in link[<sup>[2]</sup>](#refer-anchor-2), where data selection is based on the method  in [<sup>[3]</sup>](#refer-anchor-3). Please download ./database to the same directory as the main.py. The statistics of Crypto-A are summarized as below. 
+The raw data of Crypto-A is accessed with Poloniex[<sup>[2]</sup>](#refer-anchor-2).  We provide the Crypto-A dataset in link[<sup>[3]</sup>](#refer-anchor-3), where data selection is based on the method  in [<sup>[4]</sup>](#refer-anchor-4). Please download ./database to the same directory as the main.py. The statistics of Crypto-A are summarized as below. 
 | Dataset|Assets| Training | Test|
 | ---------- | :-----------:  | :-----------: |:-----------: |
 |Crypto-A|12|2016.01-2017.11|2017.11-2018.01|
@@ -90,22 +90,30 @@ When testing the given model, please comment out line 1443 in main.py to avoid t
 # Citation
 If you use this code for your research, please consider citing:
 
-@inproceedings{xu2020relation,  
-  title={Relation-Aware Transformer for Portfolio Policy Learning},  
-  author={Xu, Ke and Zhang, Yifan and Ye, Deheng and Zhao, Peilin  and Tan, Mingkui},  
-  booktitle={International Joint Conference on Artificial Intelligence},   
-  year={2020}  
-}
+@inproceedings{ijcai2020-641,  
+  title     = {Relation-Aware Transformer for Portfolio Policy Learning},  
+  author    = {Xu, Ke and Zhang, Yifan and Ye, Deheng and Zhao, Peilin and Tan, Mingkui},  
+  booktitle = {Proceedings of the Twenty-Ninth International Joint Conference on  
+               Artificial Intelligence, {IJCAI-20}},  
+  publisher = {International Joint Conferences on Artificial Intelligence Organization},               
+  editor    = {Christian Bessiere}  	
+  pages     = {4647--4653},  
+  year      = {2020},  
+  month     = {7},  
+  note      = {Special Track on AI in FinTech}  
+  doi       = {10.24963/ijcai.2020/641},  
+  url       = {https://doi.org/10.24963/ijcai.2020/641},  
+}  
 
 # References
-<div id="refer-anchor-1"></div>
+<div id="refer-anchor-2"></div>
 
 - [1] [Poloniex’s official API.](https://poloniex.com/support/api/)
 
-<div id="refer-anchor-2"></div>
+<div id="refer-anchor-3"></div>
 
 - [2] [Crypto-A dataset.](https://drive.google.com/drive/folders/1Icmc5OtTmrLp03JTIdZP849u7ZJ6ytuF)
 
-<div id="refer-anchor-3"></div>
+<div id="refer-anchor-4"></div>
 
 - [3] [Zhengyao Jiang, Dixing Xu, and Jinjun Liang. A deep reinforcement learning framework for the financial port-folio management problem. arXiv, 2017.](https://arxiv.org/abs/1706.10059)
