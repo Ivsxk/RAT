@@ -17,7 +17,7 @@
 
 # Introduction
 
-This repo is the Pytorch code for our paper “Relation-Aware Transformer for Portfolio Policy Learning” in IJCAI 2020.
+This repo is the Pytorch code for our paper “Relation-Aware Transformer for Portfolio Policy Learning”[<sup>[1]</sup>](#refer-anchor-1) in IJCAI 2020.
 
 ## Differences from the article version  
 Note that this library is a part of our main project, and it is several versions ahead of the article.
@@ -106,6 +106,10 @@ url       = {https://doi.org/10.24963/ijcai.2020/641},
 }  
 
 # References
+<div id="refer-anchor-1"></div>
+
+- [1] [Xu, Ke and Zhang, Yifan and Ye, Deheng and Zhao, Peilin and Tan, Mingkui. Relation-Aware Transformer for Portfolio Policy Learning. IJCAI, 2020.](https://doi.org/10.24963/ijcai.2020/641)
+
 <div id="refer-anchor-2"></div>
 
 - [2] [Poloniex’s official API.](https://poloniex.com/support/api/)
