@@ -91,18 +91,19 @@ When testing the given model, please comment out line 1443 in main.py to avoid t
 If you use this code for your research, please consider citing:
 
 @inproceedings{ijcai2020-641,  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     title     = {Relation-Aware Transformer for Portfolio Policy Learning},  
-   author    = {Xu, Ke and Zhang, Yifan and Ye, Deheng and Zhao, Peilin and Tan, Mingkui},  
-   booktitle = {Proceedings of the Twenty-Ninth International Joint Conference on  
-                Artificial Intelligence, {IJCAI-20}},  
-   publisher = {International Joint Conferences on Artificial Intelligence Organization},               
-   editor    = {Christian Bessiere}  	
-   pages     = {4647--4653},  
-   year      = {2020},  
-   month     = {7},  
-   note      = {Special Track on AI in FinTech}  
-   doi       = {10.24963/ijcai.2020/641},  
-   url       = {https://doi.org/10.24963/ijcai.2020/641},  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+title     = {Relation-Aware Transformer for Portfolio Policy Learning},  
+author    = {Xu, Ke and Zhang, Yifan and Ye, Deheng and Zhao, Peilin and Tan, Mingkui},  
+booktitle = {Proceedings of the Twenty-Ninth International Joint Conference on  
+             Artificial Intelligence, {IJCAI-20}},  
+publisher = {International Joint Conferences on Artificial Intelligence Organization},               
+editor    = {Christian Bessiere}  	
+pages     = {4647--4653},  
+year      = {2020},  
+month     = {7},  
+note      = {Special Track on AI in FinTech}  
+doi       = {10.24963/ijcai.2020/641},  
+url       = {https://doi.org/10.24963/ijcai.2020/641},  
 }  
 
 # References
