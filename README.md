@@ -91,7 +91,7 @@ When testing the given model, please comment out line 1443 in main.py to avoid t
 If you use this code for your research, please consider citing:
 
 @inproceedings{ijcai2020-641,  
-&nbsp;   title     = {Relation-Aware Transformer for Portfolio Policy Learning},  
+&nbsp;&nbsp;&nbsp;   title     = {Relation-Aware Transformer for Portfolio Policy Learning},  
    author    = {Xu, Ke and Zhang, Yifan and Ye, Deheng and Zhao, Peilin and Tan, Mingkui},  
    booktitle = {Proceedings of the Twenty-Ninth International Joint Conference on  
                 Artificial Intelligence, {IJCAI-20}},  
