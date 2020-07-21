@@ -108,7 +108,7 @@ url       = {https://doi.org/10.24963/ijcai.2020/641},
 # References
 <div id="refer-anchor-1"></div>
 
-- [1] [Xu, Ke and Zhang, Yifan and Ye, Deheng and Zhao, Peilin and Tan, Mingkui. Relation-Aware Transformer for Portfolio Policy Learning. IJCAI, 2020.](https://doi.org/10.24963/ijcai.2020/641)
+- [1] [Xu Ke, Zhang Yifan, Ye Deheng, Zhao Peilin and Tan Mingkui. Relation-Aware Transformer for Portfolio Policy Learning. IJCAI, 2020.](https://doi.org/10.24963/ijcai.2020/641)
 
 <div id="refer-anchor-2"></div>
 
