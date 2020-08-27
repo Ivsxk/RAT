@@ -94,9 +94,7 @@ If you use this code for your research, please consider citing:
 title     = {Relation-Aware Transformer for Portfolio Policy Learning},  
 author    = {Xu, Ke and Zhang, Yifan and Ye, Deheng and Zhao, Peilin and Tan, Mingkui},  
 booktitle = {Proceedings of the Twenty-Ninth International Joint Conference on  
-             Artificial Intelligence, {IJCAI-20}},  
-publisher = {International Joint Conferences on Artificial Intelligence Organization},               
-editor    = {Christian Bessiere}  	
+             Artificial Intelligence, {IJCAI-20}},  	
 pages     = {4647--4653},  
 year      = {2020},  
 month     = {7},  
