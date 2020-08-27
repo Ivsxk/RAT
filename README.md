@@ -91,9 +91,9 @@ When testing the given model, please comment out line 1443 in main.py to avoid t
 # Acknowledgement
 This project is constructed based on the open source project:
 
-[PGPortfolio toolbox(https://github.com/ZhengyaoJiang/PGPortfolio)]
+*[PGPortfolio toolbox(https://github.com/ZhengyaoJiang/PGPortfolio)]
 
-https://github.com/Vanint/PPN
+*[Zhang Y, Zhao P, Li B, et al. Cost-sensitive portfolio selection via deep reinforcement learning[J]. IEEE Transactions on Knowledge and Data Engineering, 2020.(https://github.com/Vanint/PPN)]
 
 
 # Citation
