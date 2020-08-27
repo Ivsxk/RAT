@@ -93,7 +93,7 @@ This project is constructed based on the open source project:
 
 * [PGPortfolio toolbox(https://github.com/ZhengyaoJiang/PGPortfolio)]
 
-* [Zhang Y, Zhao P, Li B, et al. Cost-sensitive portfolio selection via deep reinforcement learning[J]. IEEE Transactions on Knowledge and Data Engineering, 2020.(https://github.com/Vanint/PPN)]
+* [Zhang Y, Zhao P, Li B, et al. Cost-sensitive portfolio selection via deep reinforcement learning[J]. IEEE Transactions on Knowledge and Data Engineering, 2020(https://github.com/Vanint/PPN)]
 
 
 # Citation
