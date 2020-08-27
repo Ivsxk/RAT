@@ -9,6 +9,7 @@
 	- [Configurations](#configurations)
 - [Logging](#logging)
 - [Model](#model)
+- [Acknowledgement](#Acknowledgement) 
 - [Citation](#citation)
 - [References](#references)
 
@@ -86,6 +87,14 @@ After testing process, the backtest results are saved in ${LOG_DIR}/train_summar
 We provide a model with 495.28 fAPV in https://drive.google.com/drive/folders/11MK2QSj30G9pYE8qx_-80zgCDmJOHS9U?usp=sharing. 
 You can download the model to ${SAVE_MODEL_DIR}/ and test it. 
 When testing the given model, please comment out line 1443 in main.py to avoid the training process.
+
+# Acknowledgement
+This project is constructed based on the open source project:
+
+[PGPortfolio toolbox(https://github.com/ZhengyaoJiang/PGPortfolio)]
+
+https://github.com/Vanint/PPN
+
 
 # Citation
 If you use this code for your research, please consider citing:
