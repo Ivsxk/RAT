@@ -98,7 +98,7 @@ This project is constructed based on the open source project:
 
 # Citation
 If you use this code for your research, please consider citing:
-
+'''
 @inproceedings{xu-relation,  
 title     = {Relation-Aware Transformer for Portfolio Policy Learning},  
 author    = {Xu, Ke and Zhang, Yifan and Ye, Deheng and Zhao, Peilin and Tan, Mingkui},  
@@ -109,7 +109,7 @@ year      = {2020},
 month     = {7},  
 note      = {Special Track on AI in FinTech}  
 }  
-
+'''
 # References
 <div id="refer-anchor-1"></div>
 
