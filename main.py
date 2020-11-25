@@ -911,7 +911,7 @@ class MultiHeadedAttention(nn.Module):
             ass_value=ass_value.contiguous().view(q_size2*q_size1,q_size0,q_size3) #[31,128,11,2*12]->[31*128,11,2*12]
             ass_value=ass_value.contiguous().view(q_size2*q_size1,-1, self.h, self.d_k).transpose(1, 2)  #[31*128,2,11,12]
 ######################################################################################################################    
-            ass_mask=torch.ones(q_size2*q_size1,1,1,q_size0).cuda()  #[31*128,1,1,11]
+#            ass_mask=torch.ones(q_size2*q_size1,1,1,q_size0).cuda()  #[31*128,1,1,11]
             x, self.attn_asset = attention(ass_query, ass_key, ass_value, mask=None, 
                                  dropout=self.dropout)   
             x = x.transpose(1, 2).contiguous().view(q_size2*q_size1, -1, self.h * self.d_k)  #[31*128,11,2*12]        
